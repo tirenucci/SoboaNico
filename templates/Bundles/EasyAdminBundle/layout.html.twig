@@ -5,7 +5,6 @@
 <html lang="{{ ea.i18n.htmlLocale }}">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noodp, noimageindex, notranslate, nocache" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="generator" content="EasyAdmin" />
@@ -14,6 +13,7 @@
 
     {% block head_stylesheets %}
         <link rel="stylesheet" href="{{ asset('bundles/easyadmin/app.css') }}">
+        <link rel="stylesheet" href="bundles/easyadmin/Css/style.css">
     {% endblock %}
 
     {% block configured_stylesheets %}
@@ -54,72 +54,36 @@
         {% block flash_messages %}
             {{ include(ea.templatePath('flash_messages')) }}
         {% endblock flash_messages %}
-
-        <div class="wrapper">
-            {% block wrapper %}
-                <header class="main-header">
-                    {% block header %}
-                        <nav class="navbar" role="navigation">
-                            <button id="navigation-toggler" type="button" aria-label="Toggle navigation">
-                                <i class="fa fa-fw fa-bars"></i>
-                            </button>
-
-                            <div id="header-logo">
-                                {% block header_logo %}
-                                    <a class="logo {{ ea.dashboardTitle|length > 14 ? 'logo-long' }}" title="{{ ea.dashboardTitle|striptags }}" href="{{ path(ea.dashboardRouteName) }}">
-                                        {{ ea.dashboardTitle|raw }}
-                                    </a>
-                                {% endblock header_logo %}
-                            </div>
-                        </nav>
-
-                        {% set _user_menu_content %}
-                            <div class="popover-content-section user-details {{ ea.userMenu.items|length > 0 ? 'user-has-actions' }}">
-                                <p class="small text-muted mb-0">{{ 'user.logged_in_as'|trans(domain = 'EasyAdminBundle') }}</p>
-                                <p class="user-details-name">
-                                    {{ ea.user is null ? 'user.anonymous'|trans(domain = 'EasyAdminBundle') : ea.userMenu.name }}
-                                </p>
-                            </div>
-
-                            {% block user_menu %}
-                                {% if ea.userMenu.items|length > 0 %}
-                                    <div class="popover-content-section user-menu">
-                                        {% for item in ea.userMenu.items %}
-                                            <a href="{{ item.linkUrl }}" class="user-action {{ item.cssClass }}" target="{{ item.linkTarget }}" rel="{{ item.linkRel }}" referrerpolicy="origin-when-cross-origin">
-                                                {% if item.icon is not empty %}<i class="fa fa-fw {{ item.icon }}"></i>{% endif %}
-                                                <span>{{ item.label }}</span>
-                                            </a>
-                                        {% endfor %}
-                                    </div>
-                                {% endif %}
-                            {% endblock user_menu %}
-                        {% endset %}
-
-                        <div class="content-top navbar-custom-menu">
-                            {% block header_custom_menu %}
-                                {% if constant('Symfony\\Component\\Security\\Core\\Authorization\\Voter\\AuthenticatedVoter::IS_IMPERSONATOR') is defined %}
-                                    {% set impersonator_permission = 'IS_IMPERSONATOR' %}
-                                {% else %}
-                                    {% set impersonator_permission = 'ROLE_PREVIOUS_ADMIN' %}
-                                {% endif %}
-
-                                <div class="user user-menu-wrapper {{ is_granted(impersonator_permission) ? 'user-is-impersonated' }}" data-toggle="popover" data-placement="bottom" data-container=".user-menu-wrapper" data-content="{{ _user_menu_content|e('html_attr') }}" data-html="true">
-                                    {% if ea.userMenu.isAvatarDisplayed %}
-                                        {% if null == ea.userMenu.avatarUrl %}
-                                            <i class="fa fa-fw {{ ea.user is not null ? 'fa-user-circle' : 'fa-user-times' }} user-avatar"></i>
-                                        {% else %}
-                                            <img class="user-avatar" src="{{ ea.userMenu.avatarUrl }}" />
-                                        {% endif %}
-                                    {% endif %}
-                                    {% if ea.userMenu.isNameDisplayed %}
-                                        <span class="user-name">{{ ea.userMenu.name }}</span>
-                                    {% endif %}
-                                </div>
-                            {% endblock header_custom_menu %}
+        <header class="main-header">
+            {% block header %}
+            <div id="st-navbar-desktop-wrapper" class="st-navbar-desktop-wrapper st-navbar-desktop-fixed">
+                <div class="st-navbar-desktop">
+                    <div class="container">
+                        <div class="st-navbar-desktop-logo">
+                            <a class="st-navbar-desktop-logo-link" title="Logo" href="/"><img src="https://www.smoothemes.es/media/logos/smoothemes-logo.svg"></a>
                         </div>
-                    {% endblock header %}
-                </header>
-
+                        <nav class="st-navbar-desktop-menu" role="navigation">
+                            <ul id="st-navbar-desktop-menu-nav" class="sf-menu">
+                                {% set _user_menu_content %}
+                                    {% block user_menu %}
+                                    {% endblock user_menu %}
+                                {% endset %}
+                                {% endblock header %}
+                                <li class="nst-navbar-desktop-menu-nav">
+                                    <a class="nav-link dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                                        <i class="fas fa-user"></i> {{ ea.user is null ? 'user.anonymous'|trans(domain = 'EasyAdminBundle') : ea.userMenu.name }} </a>
+                                    <div class="dropdown-menu dropdown-menu-left " >
+                                        <a class="dropdown-item" style="background-color: rgba(33,33,33,0.8)" href="/logout">Log out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper" style="margin-top: 100px">
+            {% block wrapper %}
                 <aside class="main-sidebar">
                     {% block sidebar %}
                         <section class="sidebar">

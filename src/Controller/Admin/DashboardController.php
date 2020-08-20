@@ -4,6 +4,7 @@ namespace App\Controller\Admin;
 
 use App\Entity\Accueil;
 use App\Entity\User;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Assets;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
@@ -27,7 +28,9 @@ class DashboardController extends AbstractDashboardController
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
-            ->setTitle('Soboa');
+            ->setTitle('<img src="images/LogoBlack.png" style="width: 5%; padding-right: 1%;">Atelier Soboa')
+            ->setFaviconPath('images/LogoT.png');
+
     }
 
     public function configureMenuItems(): iterable
