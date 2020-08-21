@@ -14,6 +14,7 @@
     {% block head_stylesheets %}
         <link rel="stylesheet" href="{{ asset('bundles/easyadmin/app.css') }}">
         <link rel="stylesheet" href="bundles/easyadmin/Css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     {% endblock %}
 
     {% block configured_stylesheets %}
@@ -54,34 +55,31 @@
         {% block flash_messages %}
             {{ include(ea.templatePath('flash_messages')) }}
         {% endblock flash_messages %}
-        <header class="main-header">
-            {% block header %}
-            <div id="st-navbar-desktop-wrapper" class="st-navbar-desktop-wrapper st-navbar-desktop-fixed">
-                <div class="st-navbar-desktop">
-                    <div class="container">
-                        <div class="st-navbar-desktop-logo">
-                            <a class="st-navbar-desktop-logo-link" title="Logo" href="/"><img src="https://www.smoothemes.es/media/logos/smoothemes-logo.svg"></a>
-                        </div>
-                        <nav class="st-navbar-desktop-menu" role="navigation">
-                            <ul id="st-navbar-desktop-menu-nav" class="sf-menu">
-                                {% set _user_menu_content %}
-                                    {% block user_menu %}
-                                    {% endblock user_menu %}
-                                {% endset %}
-                                {% endblock header %}
-                                <li class="nst-navbar-desktop-menu-nav">
-                                    <a class="nav-link dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                                        <i class="fas fa-user"></i> {{ ea.user is null ? 'user.anonymous'|trans(domain = 'EasyAdminBundle') : ea.userMenu.name }} </a>
-                                    <div class="dropdown-menu dropdown-menu-left " >
-                                        <a class="dropdown-item" style="background-color: rgba(33,33,33,0.8)" href="/logout">Log out</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+        {% block header %}
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#"><img src="images/logoT.png" width="35" height="35" class="d-inline-block align-top" alt="">
+                    &ensp;&ensp;Page d'administration Atelier Soboa</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentLG" aria-controls="navbarSupportedContentLG" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContentLG">
+                    <ul class="navbar-nav ml-auto mr-1">
+                        <li class="nav-item dropdown my-2 my-lg-0">
+                            {% set _user_menu_content %}
+                                {% block user_menu %}
+                                {% endblock user_menu %}
+                            {% endset %}
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownLG" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user"></i> {{ ea.user is null ? 'user.anonymous'|trans(domain = 'EasyAdminBundle') : ea.userMenu.name }} </a>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownLG">
+                                <a class="dropdown-item" href="/logout">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </header>
+            </nav>
+        {% endblock header %}
         <div class="wrapper" style="margin-top: 100px">
             {% block wrapper %}
                 <aside class="main-sidebar">
