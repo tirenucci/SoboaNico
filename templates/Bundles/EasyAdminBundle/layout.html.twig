@@ -56,7 +56,7 @@
             {{ include(ea.templatePath('flash_messages')) }}
         {% endblock flash_messages %}
         {% block header %}
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="#"><img src="images/logoT.png" width="35" height="35" class="d-inline-block align-top" alt="">
                     &ensp;&ensp;Page d'administration Atelier Soboa</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentLG" aria-controls="navbarSupportedContentLG" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,21 +80,19 @@
                 </div>
             </nav>
         {% endblock header %}
-        <div class="wrapper" style="margin-top: 100px">
+        <div class="wrapper" style="margin-top: 0px">
             {% block wrapper %}
-                <aside class="main-sidebar">
+                <aside class="main-sidebar bg-dark">
                     {% block sidebar %}
                         <section class="sidebar">
                             {% block main_menu_wrapper %}
                                 {{ include(ea.templatePath('main_menu')) }}
                             {% endblock main_menu_wrapper %}
                         </section>
-
                     {% endblock sidebar %}
                 </aside>
 
                 <div class="content-wrapper">
-                    <div id="sidebar-resizer-handler" class="resizer-handler resizer-handler-left"></div>
 
                     {% block content %}
                         <div class="content">
