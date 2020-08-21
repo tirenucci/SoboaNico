@@ -1,0 +1,45 @@
+body{
+    overflow: hidden;
+}
+.navbar {
+    background-color: #0353a4;
+}
+.navbar-brand{
+    font-size: 1.5em;
+}
+
+.sidebar-menu a{
+    color: white;
+}
+.sidebar-menu li{
+    text-align: left;
+    padding: 20px 60px 20px 20px;
+
+}
+.sidebar-menu li:not(.submenu-active).active .menu-icon, .sidebar-menu li:not(.submenu-active).active a{
+    color: white;
+}
+.sidebar-menu li:not(.submenu-active).active{
+    background-color: black;
+}
+.wrapper{
+    margin: 0px 0px;
+    grid-row-gap: 0px   ;
+}
+.main-sidebar{
+    width: fit-content;
+    background-color: #343a40;
+    padding-top: 20px;
+}
+.content{
+    margin-top: 15px;
+}
+.content-wrapper{
+    height: 100vh;
+}
+@media (min-width: 1280px){
+    .wrapper {
+        grid-column-gap: 0px;
+        width: 100%;
+    }
+}
