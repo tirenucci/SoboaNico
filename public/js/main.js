@@ -55,6 +55,7 @@ AOS.init({
   };
   OnePageNav();
 
+
   $(window).scroll(function() {
 
     var $this = $(this),

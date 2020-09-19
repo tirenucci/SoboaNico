@@ -193,7 +193,7 @@ textarea.form-control {
   position: fixed;
   padding: 1em 30px;
   top: 0;
-  background: #fff;
+  background: black;
   -webkit-transition: .0s all ease;
   -o-transition: .0s all ease;
   transition: .0s all ease;
@@ -242,7 +242,7 @@ textarea.form-control {
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-
+Z
 .form-control {
   border: 2px solid #cccccc;
 }
@@ -258,7 +258,7 @@ textarea.form-control {
 }
 
 .site-nav-toggle i, .site-nav-toggle i:before, .site-nav-toggle i:after {
-  background: #ffffff !important;
+  background: white !important;
 }
 
 .btn {
@@ -406,6 +406,7 @@ textarea.form-control {
   color: #ff7a5c;
   text-transform: uppercase;
   letter-spacing: .2em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .ftco-46 .ftco-46-heading {
@@ -413,6 +414,7 @@ textarea.form-control {
   line-height: 1.5;
   font-size: 20px;
   margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .ftco-46 .ftco-46-image {
@@ -467,6 +469,7 @@ textarea.form-control {
   border-bottom-color: #fff;
   border-width: 20px;
   margin-left: -20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media (max-width: 991.98px) {
@@ -1164,7 +1167,7 @@ textarea.form-control {
 }
 
 .section {
-  padding: 7em 0;
+  padding: 3em 0;
   z-index: 2;
   position: relative;
 }
