@@ -75,7 +75,7 @@ textarea.form-control {
 /* Site Menu*/
 .site-menu {
   display: block;
-  background: #fff;
+  background: black;
   right: 0;
   z-index: 101;
   position: fixed;
@@ -121,7 +121,7 @@ textarea.form-control {
 }
 
 .site-menu ul > li a {
-  color: #000;
+  color: #fff;
   font-size: 20px;
 }
 
@@ -283,6 +283,7 @@ Z
   background: none;
   color: #fff;
   text-decoration: none;
+  font-family: 'Reem Kufi', sans-serif;
 }
 
 .btn.btn-outline-white:hover {
@@ -1281,6 +1282,7 @@ Z
   font-size: 26px;
   max-width: 500px;
   margin: 0 auto;
+  font-family: 'Reem Kufi', sans-serif;
 }
 
 @media (max-width: 991.98px) {
@@ -1294,6 +1296,7 @@ Z
   font-weight: 300;
   font-size: 30px;
   line-height: 1.5;
+  font-family: 'Reem Kufi', sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -1792,4 +1795,17 @@ Z
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+
+/*Css Custom */
+
+.toptxt{
+  padding-top: 1em;
+}
+.toptxt2{
+  padding-top: 2em;
+}
+.toptxt3{
+  padding-top: 1em;
+  padding-bottom: 2em;
 }
