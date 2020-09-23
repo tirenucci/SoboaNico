@@ -404,7 +404,7 @@ textarea.form-control {
 .ftco-46 .ftco-46-subheading {
   font-size: 14px;
   color: #b3b3b3;
-  color: #ff7a5c;
+  color: #4a82b3;
   text-transform: uppercase;
   letter-spacing: .2em;
   font-family: 'Reem Kufi', sans-serif;
@@ -1689,114 +1689,6 @@ textarea.form-control {
   color: #fff;
 }
 
-#loader {
-  position: fixed;
-  width: 96px;
-  height: 96px;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.9);
-  -webkit-box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
-  box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
-  border-radius: 16px;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
-  -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
-  transition: opacity .2s ease-out, visibility 0s linear .2s;
-  z-index: 1000;
-}
-
-#loader.fullscreen {
-  padding: 0;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  background-color: #fff;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-#loader.show {
-  -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
-  -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
-  transition: opacity .4s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1;
-}
-
-#loader .circular {
-  -webkit-animation: loader-rotate 2s linear infinite;
-  animation: loader-rotate 2s linear infinite;
-  position: absolute;
-  left: calc(50% - 24px);
-  top: calc(50% - 24px);
-  display: block;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-#loader .path {
-  stroke-dasharray: 1, 200;
-  stroke-dashoffset: 0;
-  -webkit-animation: loader-dash 1.5s ease-in-out infinite;
-  animation: loader-dash 1.5s ease-in-out infinite;
-  stroke-linecap: round;
-}
-
-@-webkit-keyframes loader-rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes loader-rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes loader-dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px;
-  }
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px;
-  }
-}
-
-@keyframes loader-dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px;
-  }
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px;
-  }
-}
-
 /*Css Custom */
 
 .toptxt{
@@ -1807,7 +1699,6 @@ textarea.form-control {
 }
 .toptxt3{
   padding-top: 1em;
-  padding-bottom: 2em;
 }
 .toptxt4{
   padding-top: 0.5em;
@@ -1828,7 +1719,7 @@ textarea.form-control {
   font-family: 'Reem Kufi', sans-serif;
 }
 .mid-div{
-  padding: 3em;
+  padding-bottom: 5em;
 }
 .mid-txt {
   margin-bottom: 0 !important;
@@ -1851,3 +1742,30 @@ textarea.form-control {
 .footerspace2{
   padding-bottom: 8em;
 }
+/* Arrow Button
+  -----------------------------------*/
+.container-arrow{
+  margin-top: -20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:#000;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  bottom:0;left:0;
+  z-index: 10;
+  width:100%;
+  padding-bottom: 15px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.container-arrow:hover,
+.container-arrow:focus{text-decoration: none;}
+
+/* Arrow Bouncing */
+.container-arrow span{  display: inline-block; font-size: 80px;	 animation: .7s down  infinite alternate; -webkit-animation: .7s down infinite alternate; }
+/***Animation Arrow down***/
+@keyframes down{ 0%{transform:translateY(0px)} 100%{transform:translateY(20px)} }
+@-webkit-keyframes down{ 0%{-webkit-transform:translateY(0px)} 100%{-webkit-transform:translateY(20px)} }
+

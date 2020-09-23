@@ -1,11 +1,8 @@
 {% extends 'base.html.twig' %}
 {% block body %}
 <body class="bg-light">
-
 <body data-spy="scroll" data-target="#ftco-navbar-spy" data-offset="0">
-
 <div class="site-wrap">
-
     <nav class="site-menu" id="ftco-navbar-spy">
         <div class="site-menu-inner" id="ftco-navbar">
             <ul class="list-unstyled">
@@ -38,12 +35,17 @@
             <div class="img_bg" style="background-image: url(images/HomePage.jpg);" data-stellar-background-ratio="0.5">
                 <div class="container">
                     <div class="row align-items-center justify-content-center text-center">
-                        <div class="col-md-10" data-aos="fade-up">
+                        <div class="col-md-10" data-aos="zoom-in">
                             <h2 class="heading mb-5">Bienvenue dans l'Atelier Soboa</h2>
                             <p><a href="#section-about" class="smoothscroll btn btn-outline-white px-5 py-3">En Savoir plus</a></p>
                         </div>
                     </div>
                 </div>
+                <a class="container-arrow scroll-to" href="#cards">
+                    <span>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                </a>
             </div>
         </div> <!-- .cover_1 -->
         <div class="section bg-white"  data-aos="fade-up">
@@ -56,21 +58,12 @@
             </div>
         </div> <!-- .section -->
         <div class="row bg-white align-items-center toptxt2">
-            <div class="col-md-1"></div>
-            <div class="col-md-4">
-                <h5 style="font-family: 'Reem Kufi', sans-serif; color: #343434;">
-                    Soboa est un atelier artisanal où conceptions et réalisations se complètent autour du travail du bois.
-                    <br>Les mains de <span style="color: blue" >Nicolas Poulard</span>  transforment la matière en mobiliers sur mesure,
-                    en objets ou encore en pièces d’art selon vos demandes.</h5>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="section pt-2 pb-2 text-center" data-aos="fade">
                     <p><img src="images/bg_hero.png" alt="Image" class="img-fluid"></p>
                 </div>
             </div>
         </div>
-
             <!-- .section -->
 
         <div class="section pb-3 bg-light" id="section-about" data-aos="fade-up">
@@ -104,6 +97,9 @@
         <div class="section bg-white"  data-aos="fade-up">
                 <div class="row justify-content-center">
                     <h1 class="text-center bg-white toptxt3" style="font-family: 'Reem Kufi', sans-serif; font-size: 5.2rem; color: #4a82b3;">Nos Réalisations</h1>
+                    <div class="col-md-12 col-lg-12 section-heading mid-div">
+                        <h5 style="font-family: 'Reem Kufi', sans-serif; color: grey;" class="heading mb-5 text-center mid-txt">Toutes nos créations sont pensées, sont conçues pour devenir des pièces uniques, correspondantes aux demandes de chacun.</h5>
+                    </div>
                     <div class="ftco-46">
                         <div class="ftco-46-row d-flex flex-column flex-lg-row">
                             <div class="ftco-46-image " style="background-image: url(images/bureau1.jpg);"></div>
@@ -113,9 +109,6 @@
                                 <p class="mb-5">BlaBlaBla</p>
                             </div>
                             <div class="ftco-46-image" style="background-image: url(images/bureau2.jpg);"></div>
-                        </div>
-                        <div class="col-md-12 col-lg-12 section-heading mid-div">
-                            <h3 style="font-family: 'Reem Kufi', sans-serif; color: #343434;" class="heading mb-5 text-center mid-txt">Toutes nos créations sont pensées, sont conçues pour devenir des pièces uniques, correspondantes aux demandes de chacun</h3>
                         </div>
                         <div class="ftco-46-row d-flex flex-column flex-lg-row ">
                             <div class="ftco-46-text ">
@@ -129,9 +122,6 @@
                                 <h3 class="ftco-46-heading">Chicken Chimichurri Croquettes</h3>
                                 <p class="mb-5">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>npm i
                             </div>
-                        </div>
-                        <div class="col-md-12 col-lg-12 section-heading mid-div">
-                            <h3 style="font-family: 'Reem Kufi', sans-serif; color: #343434;" class="heading mb-5 text-center mid-txt">Toutes nos créations sont pensées, sont conçues pour devenir des pièces uniques, correspondantes aux demandes de chacun</h3>
                         </div>
                         <div class="ftco-46">
                             <div class="ftco-46-row d-flex flex-column flex-lg-row">
@@ -164,12 +154,10 @@
                                     <p class="ftco-38-subheading">Artisan Menuisier</p>
                                 </div>
                                 <div class="ftco-38-body">
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. It is a paradisematic country.</p>
-                                    <p>
-                                        <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
-                                        <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
-                                        <a href="#" class="p-2"><span class="fa fa-instagram"></span></a>
+                                    <p style="font-family: 'Reem Kufi', sans-serif; color: #343434;">
+                                        Soboa est un atelier artisanal où conceptions et réalisations se complètent autour du travail du bois.
+                                        <br>Les mains de <span style="color: #4a82b3" >Nicolas Poulard</span> transforment la matière en mobiliers sur mesure,
+                                        en objets ou encore en pièces d’art selon vos demandes.
                                     </p>
                                 </div>
                             </div>
@@ -365,12 +353,7 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="footer-widget">
-                            <h3 class="mb-4 text-center">About Meal</h3>
-                            <p class="text-center">Tarks and devious Semikoli, but the Little Blind Text didn’t listen. </p>
-                        </div>
-                    </div>
+                    <div class="col-md-4"></div>
                     <div class="col-md-4">
                         <div class="footer-widget text-center">
                             <h3 class="mb-4">Horaire d'ouverture</h3>
@@ -378,17 +361,6 @@
                             <p>Samedi: <br>8h-12h</p>
                         </div>
                     </div>
-
-                    <div class="col-md-4">
-                        <div class="footer-widget text-center">
-                            <h3 class="mb-4">Nous Suivre</h3>
-                            <ul class="list-unstyled social">
-                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
                 </div>
 
                 <div class="row pt-5">
@@ -401,8 +373,7 @@
             </div>
         </footer>
     </div>
-    <!-- loader -->
-    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ff7a5c"/></svg></div>
+ </div>
 </body>
 <script>
     // Initialize and add the map
