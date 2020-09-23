@@ -1,10 +1,11 @@
 html {
   overflow-x: hidden;
+  font-family: 'Reem Kufi', sans-serif;
 }
 
 body {
   background: #fff;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
   font-size: 20px;
   line-height: 1.8;
   font-weight: 300;
@@ -28,7 +29,7 @@ a:hover {
 
 h1, h2, h3, h4, h5 {
   color: #000;
-  font-family: "Playfair Display", serif;
+  font-family: 'Reem Kufi', sans-serif;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a {
@@ -242,7 +243,6 @@ textarea.form-control {
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-Z
 .form-control {
   border: 2px solid #cccccc;
 }
@@ -407,7 +407,7 @@ Z
   color: #ff7a5c;
   text-transform: uppercase;
   letter-spacing: .2em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
 }
 
 .ftco-46 .ftco-46-heading {
@@ -415,7 +415,7 @@ Z
   line-height: 1.5;
   font-size: 20px;
   margin-bottom: 30px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
 }
 
 .ftco-46 .ftco-46-image {
@@ -470,7 +470,7 @@ Z
   border-bottom-color: #fff;
   border-width: 20px;
   margin-left: -20px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
 }
 
 @media (max-width: 991.98px) {
@@ -1168,7 +1168,7 @@ Z
 }
 
 .section {
-  padding: 3em 0;
+  padding: 1em 0;
   z-index: 2;
   position: relative;
 }
@@ -1668,7 +1668,7 @@ Z
 
 .ftco-footer {
   background: #121212;
-  padding: 7em 0;
+  padding: 3em;
   font-size: 15px;
   font-weight: 400;
 }
@@ -1800,7 +1800,7 @@ Z
 /*Css Custom */
 
 .toptxt{
-  padding-top: 1em;
+  padding-top: 2em;
 }
 .toptxt2{
   padding-top: 2em;
@@ -1808,4 +1808,46 @@ Z
 .toptxt3{
   padding-top: 1em;
   padding-bottom: 2em;
+}
+.toptxt4{
+  padding-top: 0.5em;
+}
+.toptxt5{
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+.toptxt6{
+  padding-top: 0.5em;
+}
+.toptxt7{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.txt7 {
+  font-family: 'Reem Kufi', sans-serif;
+}
+.mid-div{
+  padding: 3em;
+}
+.mid-txt {
+  margin-bottom: 0 !important;
+}
+.form-control:hover, .form-control:focus, .form-control:active{
+  border-color: #4a82b3 !important;
+}
+.btn-outline-primary{
+  color: #4a82b3 !important;
+  border-color: #4a82b3 !important;
+}
+.btn-outline-primary:hover{
+  color: #4a82b3 !important;
+  border-color: #4a82b3 !important;
+  background-color: transparent !important;
+}
+.footerspace1{
+  padding-bottom: 5em;
+}
+.footerspace2{
+  padding-bottom: 8em;
 }

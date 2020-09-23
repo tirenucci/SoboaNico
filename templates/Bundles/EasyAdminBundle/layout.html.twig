@@ -12,7 +12,7 @@
     <title>{% block page_title %}{{ block('content_title')|striptags|raw }}{% endblock %}</title>
 
     {% block head_stylesheets %}
-        <link rel="stylesheet" href="{{ asset('bundles/easyadmin/app.css') }}">
+        <link rel="stylesheet" href="bundles/easyadmin/app.css">
         <link rel="stylesheet" href="css/admin.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     {% endblock %}
@@ -24,15 +24,14 @@
     {% endblock %}
 
     {% block head_favicon %}
-        <link rel="shortcut icon" href="{{ asset(ea.dashboardFaviconPath) }}">
     {% endblock %}
 
     {% block head_javascript %}
-        <script src="{{ asset('bundles/easyadmin/app.js') }}"></script>
+        <script src="bundles/easyadmin/app.js"></script>
     {% endblock head_javascript %}
 
     {% if 'rtl' == ea.i18n.textDirection %}
-        <link rel="stylesheet" href="{{ asset('bundles/easyadmin/app-rtl.css') }}">
+        <link rel="stylesheet" href="bundles/easyadmin/app-rtl.css">
     {% endif %}
 
     {% block configured_head_contents %}
