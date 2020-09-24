@@ -1693,9 +1693,16 @@ textarea.form-control {
 
 .toptxt{
   padding-top: 2em;
+  padding-bottom: 1em;
+}
+.txt-10{
+  padding-top: 2em !important;
 }
 .toptxt2{
   padding-top: 2em;
+}
+.toptxt2-1{
+  padding-right: 0 !important;
 }
 .toptxt3{
   padding-top: 1em;
