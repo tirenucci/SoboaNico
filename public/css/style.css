@@ -1692,7 +1692,7 @@ textarea.form-control {
 /*Css Custom */
 
 .toptxt{
-  padding-top: 2em;
+  padding-top: 1em;
   padding-bottom: 1em;
 }
 .txt-10{
@@ -1701,6 +1701,7 @@ textarea.form-control {
 .toptxt2{
   padding-top: 2em;
 }
+
 .toptxt2-1{
   padding-right: 0 !important;
 }
@@ -1712,7 +1713,6 @@ textarea.form-control {
 }
 .toptxt5{
   padding-top: 0.5em;
-  padding-bottom: 1em;
 }
 .toptxt6{
   padding-top: 0.5em;
@@ -1724,6 +1724,7 @@ textarea.form-control {
 
 .txt7 {
   font-family: 'Reem Kufi', sans-serif;
+  padding-bottom: 5em;
 }
 .mid-div{
   padding-bottom: 5em;
@@ -1749,6 +1750,34 @@ textarea.form-control {
 .footerspace2{
   padding-bottom: 8em;
 }
+.shadow {
+  left: 99%; top: 0;
+  right: 0; bottom: 0;
+  background: #000;
+  box-shadow: 5px 7px 29px 1px rgba(0,0,0,0.75) !important;
+}
+.shadow2{
+  box-shadow: 0px 2px 32px -2px rgba(0,0,0,0.56) !important;
+}
+.foot{
+  padding: 0px 0px 0px 3em;
+}
+.foot2{
+  padding-right: 2em;
+}
+.blue{
+  background-color: #774b16;
+}
+.engBot{
+  padding-top: 5em;
+}
+
+.rea{
+  padding-bottom: 3em;
+}
+.site-menu ul > li a:hover{
+  color: #4a82b3 !important;
+}
 /* Arrow Button
   -----------------------------------*/
 .container-arrow{
@@ -1767,6 +1796,7 @@ textarea.form-control {
   cursor: pointer;
   font-size: 12px;
 }
+
 .container-arrow:hover,
 .container-arrow:focus{text-decoration: none;}
 
