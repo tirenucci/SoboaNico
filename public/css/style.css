@@ -1265,6 +1265,7 @@ textarea.form-control {
   background-repeat: no-repeat;
   background-size: cover !important;
   background-position: center center;
+  background-image: url(../uploads/images/homePage/homePage.png);
 }
 
 .cover_1 .img_bg, .cover_1 .img_bg > .container > .row {
@@ -1689,8 +1690,8 @@ textarea.form-control {
   color: #fff;
 }
 
-/*Css Custom */
 
+/*Css Custom */
 .toptxt{
   padding-top: 1em;
   padding-bottom: 1em;
@@ -1751,6 +1752,7 @@ textarea.form-control {
   padding-bottom: 8em;
 }
 .shadow {
+  width: 80%;
   left: 99%; top: 0;
   right: 0; bottom: 0;
   background: #000;
@@ -1777,6 +1779,13 @@ textarea.form-control {
 }
 .site-menu ul > li a:hover{
   color: #4a82b3 !important;
+}
+.site-header img {
+  width: 10%
+}
+.scrolled img {
+  width: auto; !important;
+  height: 3rem;
 }
 /* Arrow Button
   -----------------------------------*/
