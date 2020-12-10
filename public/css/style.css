@@ -1,6 +1,7 @@
 html {
   overflow-x: hidden;
   font-family: 'Reem Kufi', sans-serif;
+
 }
 
 body {
@@ -1786,6 +1787,9 @@ textarea.form-control {
 .scrolled img {
   width: auto; !important;
   height: 3rem;
+}
+.img-fluid{
+  width: 100%;
 }
 /* Arrow Button
   -----------------------------------*/
