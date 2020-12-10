@@ -1,21 +1,27 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-<body class="bg-light">
-<body data-spy="scroll" data-target="#ftco-navbar-spy" data-offset="0">
-<div class="site-wrap">
-    <nav class="site-menu" id="ftco-navbar-spy">
-        <div class="site-menu-inner" id="ftco-navbar">
-            <ul class="list-unstyled">
-                <li><a href="#section-home">Accueil</a></li>
-                <li><a href="#sectionStart">A Propos</a></li>
-                <li><a href="#nosrea">Nos Réalisations</a></li>
-                <li><a href="#artisan">Nos engagements</a></li>
-                <li><a href="#artisan">L'atelier</a></li>
-                <li><a href="#section-reservation">Avis Clients</a></li>
-                <li><a href="#section-contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+
+<!-- NavBar de Droite -->
+
+<body class="bg-light" data-spy="scroll" data-target="#ftco-navbar-spy" data-offset="0">
+    <div class="site-wrap">
+        <nav class="site-menu" id="ftco-navbar-spy">
+            <div class="site-menu-inner" id="ftco-navbar">
+                <ul class="list-unstyled">
+                    <li><a href="#section-home">Accueil</a></li>
+                    <li><a href="#sectionStart">A Propos</a></li>
+                    <li><a href="#nosrea">Nos Réalisations</a></li>
+                    <li><a href="#artisan">Nos engagements</a></li>
+                    <li><a href="#artisan">L'atelier</a></li>
+                    <li><a href="#section-reservation">Avis Clients</a></li>
+                    <li><a href="#section-contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Header -->
+
     <header class="site-header">
         <div class="row align-items-center">
             <div class="col-5 col-md-3"></div>
@@ -28,11 +34,11 @@
                 <a href="#" class="site-nav-toggle js-site-nav-toggle"><i></i></a>
             </div>
         </div>
+    </header>
 
-    </header> <!-- site-header -->
+    <!-- Premier Diapo -->
 
     <div class="main-wrap " id="section-home">
-
         <div class="cover_1 overlay bg-light">
             <div class="img_bg" data-stellar-background-ratio="0.5">
                 <div class="container">
@@ -50,16 +56,48 @@
                 </a>
             </div>
             <div id="sectionStart"></div>
-        </div> <!-- .cover_1 -->
+        </div>
+
+        <!-- L'artisan -->
+
+        <div class="section" data-aos="fade-up">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-12 section-heading text-center">
+                        <h1 class="text-center titreArtisan text-style-canard">L'artisan</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 pr-md-12 text-center mb-12">
+                        <img class ="shadow" src="{{ asset('uploads/images/homePage/nico.png') }}">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 pr-md-12 text-center mb-12">
+                        <h3 class="ftco-38-heading">Nicolas Poulard</h3>
+                        <p class="ftco-38-subheading">Artisan Menuisier</p>
+                        <div class="ftco-38-body">
+                            <p style="font-family: 'Reem Kufi', sans-serif; color: #343434;">
+                                Soboa est un atelier artisanal où conceptions et réalisations se complètent autour du travail du bois.
+                                <br>Les mains de <span style="color: #4a82b3" >Nicolas Poulard</span> transforment la matière en mobiliers sur mesure,
+                                en objets ou encore en pièces d’art selon vos demandes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="section bg-white"  data-aos="fade-right">
             <div class="container-fluid">
                 <div class="row section-heading justify-content-center">
                     <div class=" text-center">
-                        <h1 class ="toptxt" style="font-size: 3em; font-family: 'Reem Kufi', sans-serif; color: #009090;">Concepteur, fabricant de mobilier design, passionné d'art manuel</h1>
+                        <h1 class ="toptxt text-style-canard">Concepteur, fabricant de mobilier design, passionné d'art manuel</h1>
                     </div>
                 </div>
             </div>
-        </div> <!-- .section -->
+        </div>
         <div class="container-fluid bg-white">
             <div class="row" style="padding-bottom: 8em; padding-top: 1em">
                 <div class="col-md-1"></div>
@@ -67,7 +105,7 @@
                     <img class ="shadow" src="{{ asset('uploads/images/homePage/nico.png') }}">
                 </div>
                 <div class="col-md-5 align-self-center">
-                    <h4 style="font-family: 'Reem Kufi', sans-serif; color: grey;">
+                    <h4 class ="texte-style-grey">
                         Soboa est un atelier artisanal où conceptions et réalisations se complètent autour du travail du bois.
                         <br><br>Les mains de <span style="color: #4a82b3" >Nicolas Poulard</span> transforment la matière en mobiliers sur mesure,
                         en objets ou encore en pièces d’art selon vos demandes.
@@ -75,6 +113,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Section 'A propos' -->
+
         <div class="blue " id="section-about" data-aos="fade-up" style="padding-top: 5em;">
             <div class="container-fluid foot">
                 <div class="row">
@@ -98,7 +139,6 @@
                     </div>
                 </div>
                 <div id="nosrea"></div>
-
         </div>
         <div class="section bg-white"  data-aos="fade-up" id="nosrea">
             <div class="row justify-content-center rea">
@@ -108,7 +148,7 @@
                     </div>
                     <div class="ftco-46 shadow2">
                         <div class="ftco-46-row d-flex flex-column flex-lg-row">
-                            <div class="ftco-46-image " style="background-image: url(uploads/images/homePage/bureau1.png);"></div>
+                            <div class="ftco-46-image " style="background-image: url(   uploads/images/homePage/bureau1.png);"></div>
                             <div class="ftco-46-text">
                                 <h4 class="ftco-46-subheading">Création</h4>
                                 <h3 class="ftco-46-heading"><br>Création d'un Bureau et de son Ameublement</h3>
@@ -236,20 +276,6 @@
                 </div>
             </div>
         </div> <!-- .section -->
-        <div class="container-fluid bg-white">
-            <div class="row section-heading justify-content-center bg-white">
-                <div class="col-md-8 text-center">
-                    <h1 class="text-center toptxt5" style="font-family: 'Reem Kufi', sans-serif; font-size: 5.2rem; color: #4a82b3;">L'atelier</h1>
-                </div>
-            </div>
-        </div>
-        <div class="row bg-white align-items-center toptxt2">
-            <div class="col-md-12 toptxt2-1">
-                <div class="section pt-2 pb-2 text-center" data-aos="fade">
-                    <p><img src="{{ asset('uploads/images/homePage/atelier.png') }}" alt="Image" class="img-fluid"></p>
-                </div>
-            </div>
-        </div>
         <div class="section"  data-aos="fade-up">
             <div class="container">
                 <div class="row section-heading justify-content-center mb-5">

@@ -1693,6 +1693,11 @@ textarea.form-control {
 
 
 /*Css Custom */
+
+.titreArtisan{
+  padding-top: 0.5em;
+}
+
 .toptxt{
   padding-top: 1em;
   padding-bottom: 1em;
@@ -1709,9 +1714,6 @@ textarea.form-control {
 }
 .toptxt3{
   padding-top: 1em;
-}
-.toptxt4{
-  padding-top: 0.5em;
 }
 .toptxt5{
   padding-top: 0.5em;
@@ -1753,7 +1755,7 @@ textarea.form-control {
   padding-bottom: 8em;
 }
 .shadow {
-  width: 80%;
+  width: 40%;
   left: 99%; top: 0;
   right: 0; bottom: 0;
   background: #000;
@@ -1791,6 +1793,16 @@ textarea.form-control {
 .img-fluid{
   width: 100%;
 }
+.text-style-canard{
+  font-size: 3em;
+  font-family: 'Reem Kufi', sans-serif;
+  color: #009090;
+}
+.texte-style-grey{
+  font-family: 'Reem Kufi', sans-serif;
+  color: grey;
+}
+
 /* Arrow Button
   -----------------------------------*/
 .container-arrow{
