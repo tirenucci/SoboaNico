@@ -4,6 +4,7 @@ namespace App\Controller\Admin;
 
 use App\Entity\Accueil;
 use App\Entity\User;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Assets;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
@@ -45,5 +46,10 @@ class DashboardController extends AbstractDashboardController
         return parent::configureUserMenu($user)
             ->setName($user->getName())
             ;
+    }
+    public function configureAssets(): Assets
+    {
+
+        return Assets::new()->addCssFile('css/admin.css');
     }
 }

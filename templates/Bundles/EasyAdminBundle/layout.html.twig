@@ -17,12 +17,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     {% endblock %}
 
-    {% block configured_stylesheets %}
-        {% for css_asset in ea.assets.cssFiles ?? [] %}
-            <link rel="stylesheet" href="{{ asset(css_asset) }}">
-        {% endfor %}
-    {% endblock %}
-
     {% block head_favicon %}
     {% endblock %}
 
