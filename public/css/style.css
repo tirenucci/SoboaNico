@@ -1695,12 +1695,29 @@ textarea.form-control {
 /*Css Custom */
 
 .titreArtisan{
-  padding-top: 0.5em;
+  padding-top: 1vh;
+  font-size: 3em;
+}
+.texte-artisan{
+  padding-top: 8vh;
+}
+.nom-artisan{
+  font-size: 3em;
+  font-family: 'Reem Kufi', sans-serif;
+  color: #009090;
 }
 
-.toptxt{
+.paragraphe{
+  font-family: 'Reem Kufi', sans-serif;
+  color: #343434;
+}
+
+.citation{
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-botton: 1em;
+  font-size: 2em;
+  font-family: 'Reem Kufi', sans-serif;
+  color: #009090;
 }
 .txt-10{
   padding-top: 2em !important;
@@ -1712,8 +1729,8 @@ textarea.form-control {
 .toptxt2-1{
   padding-right: 0 !important;
 }
-.toptxt3{
-  padding-top: 1em;
+.texte-realisations{
+  padding-top: 0.5em;
 }
 .toptxt5{
   padding-top: 0.5em;
@@ -1755,7 +1772,7 @@ textarea.form-control {
   padding-bottom: 8em;
 }
 .shadow {
-  width: 40%;
+  width: 70%;
   left: 99%; top: 0;
   right: 0; bottom: 0;
   background: #000;
@@ -1794,7 +1811,7 @@ textarea.form-control {
   width: 100%;
 }
 .text-style-canard{
-  font-size: 3em;
+  font-size: 5em;
   font-family: 'Reem Kufi', sans-serif;
   color: #009090;
 }
