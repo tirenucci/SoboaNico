@@ -1697,9 +1697,10 @@ textarea.form-control {
 .titreArtisan{
   padding-top: 1vh;
   font-size: 3em;
+  color: #009090;
 }
 .texte-artisan{
-  padding-top: 8vh;
+  padding-top: 5vh;
 }
 .nom-artisan{
   font-size: 3em;
@@ -1711,15 +1712,20 @@ textarea.form-control {
   font-family: 'Reem Kufi', sans-serif;
   color: #343434;
 }
+.paragraphe-atelier{
+
+}
 
 .citation{
-  padding-top: 1em;
-  padding-botton: 1em;
   font-size: 2em;
   font-family: 'Reem Kufi', sans-serif;
-  color: #009090;
 }
-.txt-10{
+.card-img-top{
+  width: auto !important;
+}
+.card-title{
+  font-family: 'Reem Kufi', sans-serif;
+  color: #009090;
   padding-top: 2em !important;
 }
 .toptxt2{
@@ -1772,7 +1778,7 @@ textarea.form-control {
   padding-bottom: 8em;
 }
 .shadow {
-  width: 100%;
+  width: 90%;
   left: 99%; top: 0;
   right: 0; bottom: 0;
   background: #000;
@@ -1792,9 +1798,6 @@ textarea.form-control {
   padding-top: 5em;
 }
 
-.rea{
-  padding-bottom: 3em;
-}
 .site-menu ul > li a:hover{
   color: #4a82b3 !important;
 }
@@ -1816,6 +1819,14 @@ textarea.form-control {
 .texte-style-grey{
   font-family: 'Reem Kufi', sans-serif;
   color: grey;
+}
+.titre-footer-canard{
+  font-size: 2em;
+  font-family: 'Reem Kufi', sans-serif;
+  color: #009090;
+}
+.horaire-footer{
+  color: white;
 }
 
 /* Arrow Button
