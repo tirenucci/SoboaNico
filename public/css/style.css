@@ -1671,6 +1671,7 @@ textarea.form-control {
 .ftco-footer {
   background: #121212;
   padding: 3em;
+  padding-bottom: 0em !important;
   font-size: 15px;
   font-weight: 400;
 }
@@ -1727,6 +1728,10 @@ textarea.form-control {
   font-family: 'Reem Kufi', sans-serif;
   color: #009090;
   padding-top: 2em !important;
+}
+.mentions{
+  position: relative;
+  bottom: 0;
 }
 .toptxt2{
   padding-top: 2em;
