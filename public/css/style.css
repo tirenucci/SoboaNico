@@ -1751,7 +1751,7 @@ textarea.form-control {
 
 .ftco-footer {
   background: #121212;
-  padding: 3em;
+  padding-top: 3em;
   padding-bottom: 0em !important;
   font-size: 15px;
   font-weight: 400;
@@ -1793,9 +1793,6 @@ textarea.form-control {
 .paragraphe{
   font-family: 'Reem Kufi', sans-serif;
   color: #343434;
-}
-.paragraphe-atelier{
-
 }
 
 .citation{
@@ -1910,6 +1907,10 @@ textarea.form-control {
 }
 .horaire-footer{
   color: white;
+}
+.color_carnard{
+  Font-family: 'Reem Kufi', sans-serif;
+  color: #009090;
 }
 
 /* Arrow Button
