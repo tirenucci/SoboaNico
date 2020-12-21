@@ -1799,6 +1799,38 @@ textarea.form-control {
   font-size: 2em;
   font-family: 'Reem Kufi', sans-serif;
 }
+.a_propos{
+  background-color: #009090;
+  height: 150vh;
+}
+.container_a_propos{
+  max-width: 100%;
+}
+.row_a_propos{
+  padding-top: 15vh;
+}
+.a_propos_titre{
+  margin-top: 1em;
+  margin-bottom: 0 !important;
+  color: white;
+  font-family:'Reem Kufi', sans-serif;
+  font-size: 3em;
+}
+.box_a_propos{
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 1rem 5rem -2rem rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  height: 20vh;
+}
+.box_a_propos h1{
+  line-height: 10vh;
+}
+.box_a_propos h5{
+  line-height: 3vh;
+  padding-right: 10vh;
+  padding-left: 10vh;
+}
 .card-img-top{
   width: auto !important;
 }
