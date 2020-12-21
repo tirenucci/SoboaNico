@@ -1800,8 +1800,8 @@ textarea.form-control {
   font-family: 'Reem Kufi', sans-serif;
 }
 .a_propos{
-  background-color: #009090;
-  height: 150vh;
+  background-color: #007373;
+  height: 145vh;
 }
 .container_a_propos{
   max-width: 100%;
@@ -1825,6 +1825,7 @@ textarea.form-control {
 }
 .box_a_propos h1{
   line-height: 10vh;
+  font-size: 2.5em;
 }
 .box_a_propos h5{
   line-height: 3vh;
@@ -1904,7 +1905,7 @@ textarea.form-control {
   padding-right: 2em;
 }
 .blue{
-  background-color: #004a4a;
+  background-color: #007373;
 }
 .engBot{
   padding-top: 5em;
