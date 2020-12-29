@@ -1,7 +1,5 @@
-@font-face {
-  font-family: "Reem Kufi";
-  src: url('fonts/ReemKufi-Regular.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
 html {
   overflow-x: hidden;
   font-family: 'Reem Kufi', sans-serif;
