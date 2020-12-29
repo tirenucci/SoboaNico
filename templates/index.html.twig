@@ -144,7 +144,7 @@
                 </div>
             </div>
         </div>
-        <div class="section bg-white"  data-aos="fade-up" id="nosrea">
+        <div class="section bg-light"  data-aos="fade-up" id="nosrea">
             <div class="row justify-content-center ">
                 <h1 class="text-center texte-realisations text-style-canard">Nos Réalisations</h1>
                 <div class="col-md-12 col-lg-12 section-heading mid-div">
@@ -154,74 +154,84 @@
         </div>
 
         <!-- Carroussel of Cards -->
-        <div class="container bg-white">
-            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-                <!--Controls-->
-                <div class="controls-top">
-                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-                </div>
-                <!--/.Controls-->
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                    <li data-target="#multi-item-example" data-slide-to="1"></li>
-                </ol>
-                <!--/.Indicators-->
+        <div class="container-fluid bg-light ">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+                        <!--Controls-->
+                        <!--/.Controls-->
+                        <!--Indicators-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                            <li data-target="#multi-item-example" data-slide-to="1"></li>
+                        </ol>
+                        <!--/.Indicators-->
 
-                <!--Slides-->
-                <div class="carousel-inner" role="listbox">
-                    <!--First slide-->
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="card-deck">
-                                <div class="card">
-                                    <img class="card-img-top" loading="lazy" src="{{ asset('uploads/images/homePage/bureau1.jpg') }}" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Card title</h5>
-                                        <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img class="card-img-top" loading="lazy" src="{{ asset('uploads/images/homePage/bureau2.jpg') }}" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Card title</h5>
-                                        <p class="card-text text-justify">This card has supporting text below as a natural lead-in to additional content.</p>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img class="card-img-top" loading="lazy" src="{{ asset('uploads/images/homePage/terasse1.jpg') }}" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Card title</h5>
-                                        <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                            <!--First slide-->
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="card-deck">
+                                        <div class="card">
+                                            <img class="card-img-top" loading="lazy" src="{{ asset('uploads/images/homePage/bureau1.jpg') }}" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Chantier 1</h5>
+                                                <p class="card-text text-justify">Création d'un bureau sur-mesure</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" loading="lazy" src="{{ asset('uploads/images/homePage/bureau2.jpg') }}" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Chantier 2</h5>
+                                                <p class="card-text text-justify">Création d'un autre bureau sur-mesure</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" loading="lazy" src="{{ asset('uploads/images/homePage/terasse1.jpg') }}" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Chantier 3</h5>
+                                                <p class="card-text text-justify">Mise en place d'une terasse sur les toits du puy-en-velay</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="card-deck">
-                                <div class="card">
-                                    <img class="card-img-top" loading="lazy" src="{{ asset('uploads/images/homePage/bureau1.jpg') }}" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Card title</h5>
-                                        <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="card-deck">
+                                        <div class="card">
+                                            <img class="card-img-top" loading="lazy" src="{{ asset('uploads/images/homePage/bureau1.jpg') }}" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Chantier 1</h5>
+                                                <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" loading="lazy" src="{{ asset('uploads/images/homePage/bureau2.jpg') }}" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Card title</h5>
+                                                <p class="card-text text-justify">This card has supporting text below as a natural lead-in to additional content.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" loading="lazy" src="{{ asset('uploads/images/homePage/terasse1.jpg') }}" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Card title</h5>
+                                                <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <img class="card-img-top" loading="lazy" src="{{ asset('uploads/images/homePage/bureau2.jpg') }}" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Card title</h5>
-                                        <p class="card-text text-justify">This card has supporting text below as a natural lead-in to additional content.</p>
-                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="text-center col-md-1 controls-bot">
+                                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-arrow-left fa-3x"></i></a>
                                 </div>
-                                <div class="card">
-                                    <img class="card-img-top" loading="lazy" src="{{ asset('uploads/images/homePage/terasse1.jpg') }}" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center">Card title</h5>
-                                        <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                    </div>
+                                <div class="col-md-10"></div>
+                                <div class="text-center col-md-1 controls-bot">
+                                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-arrow-right fa-3x"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -232,7 +242,7 @@
 
         <!-- .section -->
 
-        <div class="section bg-white services-section" data-aos="fade-up">
+        <div class="section bg-light services-section" data-aos="fade-up">
             <div class="container-fluid blue">
                 <div class="row section-heading justify-content-center mb-5">
                     <div class="col-md-8 text-center">
