@@ -1865,6 +1865,11 @@ textarea.form-control {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
+.carousel-padding{
+  padding-left: 2em;
+  padding-right: 2em;
+
+}
 
 .txt7 {
   font-family: 'Reem Kufi', sans-serif;
