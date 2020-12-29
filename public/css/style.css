@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Reem Kufi";
-  src: url("../fonts/ReemKufi-Regulard.ttf") format("truetype"),
+  src: url('fonts/ReemKufi-Regular.ttf');
 }
 html {
   overflow-x: hidden;
