@@ -1958,6 +1958,9 @@ textarea.form-control {
   .row{
     margin:0 !important;
   }
+  html{
+    background-color: black;
+  }
   .text-style-canard {
     padding-top: 50px;
     font-size: 2em;
