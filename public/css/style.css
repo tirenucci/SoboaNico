@@ -1974,8 +1974,11 @@ textarea.form-control {
   .footer-widget{
     padding-bottom: 10%;
   }
-  .horaire-footer{
+  .horaire-footer {
     padding-bottom: 10%;
+  }
+  .footerspace2{
+    display: none;
   }
 }
 
