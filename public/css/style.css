@@ -1955,6 +1955,9 @@ textarea.form-control {
   color: #009090;
 }
 @media only screen and (max-width: 800px) {
+  .row{
+    margin:0 !important;
+  }
   .text-style-canard {
     padding-top: 50px;
     font-size: 2em;
