@@ -1966,6 +1966,24 @@ textarea.form-control {
     padding-top: 50px;
     font-size: 2em;
   }
+  .row_a_propos{
+    padding-top : 0 !important;
+    padding-bottom: 40%;
+  }
+  .a_propos_titre{
+    text-align: center;
+  }
+  .box_a_propos{
+    margin-top: 10%;
+    height: 10vh;
+  }
+  .box_a_propos h5{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .txtmob{
+    display: none;
+  }
   .nosengagements{
     font-size: 2.5em;
   }
