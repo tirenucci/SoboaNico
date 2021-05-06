@@ -1,7 +1,7 @@
 html {
   overflow-x: hidden;
   font-family: 'Reem Kufi', sans-serif;
-
+  overflow-x: hidden;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
   line-height: 1.8;
   font-weight: 300;
   color: gray;
+  overflow-x: hidden;
 }
 
 p, ul, ol {
@@ -1979,9 +1980,6 @@ textarea.form-control {
   }
   .horaire-footer {
     padding-bottom: 10%;
-  }
-  .footerspace2{
-    display: none;
   }
 }
 
