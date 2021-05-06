@@ -1867,9 +1867,13 @@ textarea.form-control {
 .carousel-padding{
   padding-left: 2em;
   padding-right: 2em;
+}
+.nosengagements{
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 5.2rem;
+  color: white;
 
 }
-
 .txt7 {
   font-family: 'Reem Kufi', sans-serif;
   padding-bottom: 5em;
@@ -1949,6 +1953,27 @@ textarea.form-control {
 .color_carnard{
   Font-family: 'Reem Kufi', sans-serif;
   color: #009090;
+}
+@media only screen and (max-width: 800px) {
+  .text-style-canard {
+    padding-top: 50px;
+    font-size: 2em;
+  }
+  .nosengagements{
+    font-size: 2.5em;
+  }
+  .footerspace1{
+    padding-bottom : 0;
+  }
+  .section{
+    padding: 0;
+  }
+  .footer-widget{
+    padding-bottom: 10%;
+  }
+  .horaire-footer{
+    padding-bottom: 10%;
+  }
 }
 
 /* Arrow Button
