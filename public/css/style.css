@@ -1973,6 +1973,12 @@ textarea.form-control {
   .a_propos_titre{
     text-align: center;
   }
+  .fleche{
+    display: none;
+  }
+  .carousel-padding{
+    padding-left: 1em;
+  }
   .box_a_propos{
     margin-top: 10%;
     height: 10vh;
